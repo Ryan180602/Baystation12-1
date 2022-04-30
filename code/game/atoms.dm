@@ -14,6 +14,8 @@
 	var/list/climbers
 	var/climb_speed_mult = 1
 	var/init_flags = EMPTY_BITFIELD
+	///Our local copy of filter data so we can add/remove it
+	var/list/filter_data
 
 /atom/New(loc, ...)
 	//atom creation method that preloads variables at creation

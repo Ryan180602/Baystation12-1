@@ -1125,6 +1125,9 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 /proc/crash_at(msg, file, line)
 	CRASH("%% [file],[line] %% [msg]")
 
+//Makes sure MIDDLE is between LOW and HIGH. If not, it adjusts it. Returns the adjusted value.
+/proc/between(var/low, var/middle, var/high)
+	return max(min(middle, high), low)
 
 //clicking to move pulled objects onto assignee's turf/loc
 /proc/do_pull_click(mob/user, atom/A)

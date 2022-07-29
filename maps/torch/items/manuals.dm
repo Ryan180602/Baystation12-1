@@ -142,3 +142,30 @@
 	<i>Regards, John.</i></tt>
 	<i>This paper has been stamped with the stamp of Office of the General Secretary of SCG.</i>
 	"}
+
+/obj/item/folder/envelope/declassified1
+	desc = "A thick envelope. The Sol Fleet crest is stamped in the corner, along with 'PUBLIC RELEASE DOCUMENTATION'."
+
+/obj/item/folder/envelope/declassified1/Initialize()
+	. = ..()
+	new/obj/item/paper/dclassreport1(src)
+
+/obj/item/paper/dclassreport1
+	name = "Declassified Report: Status of the Fleets"
+	info = {"
+	<center><strong><span style="color: red;">DECLASSIFIED REPORT T. SECTION #314-E</span></strong>
+	<h3>MARSCOM - HIGH COMMAND OFFICES</h3>
+	<img src="fleetlogo.png"/></center>
+	<p><tt><tt><strong>FROM:</strong> Rear Admiral <span style="background-color: #000000; color: #000000;">XXXXXXXX</span> <span style="color: #000000; background-color: #000000;">XXXXXXXXXXXX</span>, SFV <span style="color: #000000; background-color: #000000;">XXXXXXXXXXXXXXX</span> <br /><strong>TO:</strong> Admiral of the Fleet Christopher Hernandez<br /><strong>CC:</strong> Secretary General's Office<br /><strong>SUBJECT:</strong> Report on the Status of the Fleets<br /></tt></tt></p>
+	<hr/>
+	<p>Monday, 2310/07/18 at approx. 0500 local time (Lunan Standard) a report has been sounded that we have lost no less than <span style="color: #000000; background-color: #000000;">XXXXXXXXX</span>&nbsp; vessels who have completely disabled or destroyed their locational tracking equipment. <span style="color: #000000; background-color: #000000;">XXXXXXXXX</span>&nbsp; more vessels have been reported as missing, and <span style="color: #000000; background-color: #000000;">XXXXXXXX</span>&nbsp; as AWOL with active tracking sensors who are not responding to hails. Among these vessels there are three groups of which they hail. Fifth Fleet Special Group Alpha, Third Fleet Support Group Bravo, and the Fifth Fleet Carrier Group Alpha. At this time all vessels within ||VesselList.rpt |ERROR: UNABLE TO LOAD|| have been confirmed to have absconded from their duties.</p>
+	<p><strong>...</strong></p>
+	<p>Rear Admiral <span style="color: #000000; background-color: #000000;">XXXXXXXX</span>&nbsp;<span style="color: #000000; background-color: #000000;">XXXXXXXXXXXXXXX</span>&nbsp; of the SFV <span style="color: #000000; background-color: #000000;">XXXXX</span>&nbsp;<span style="color: #000000; background-color: #000000;">XXXXXXXXX</span>&nbsp; has reported a level of dissention within the ranks of the Third Fleet primarily concerning the thaw of relations with the Terrans. Commodore <span style="color: #000000; background-color: #000000;">XXXXX</span>&nbsp;<span style="color: #000000; background-color: #000000;">XXXXXXXXX</span>&nbsp; of the SFV <span style="color: #000000; background-color: #000000;">XXXXXXXXX</span>&nbsp; has reported additional instabilities within enlisted personnel and Line Officers of the Third Fleet. Admiral of the Fleet Chrostopher Hernandez of the SFV Amazon has mobilized the First Fleet in response, and is preparing sorties and patrols of Sol and its surrounding systems to verify the safety of the system, and its colonies. Vice Admiral Yamato Akito of the SFV Resolution has agreed to mobilize patrols within other systems near the core.</p>
+	<p><strong>...</strong></p>
+	<p>The Expeditionary Corps and their staffing have been confirmed to continue operations by Admiral Henry Lau, and Admiral <span style="color: #000000; background-color: #000000;">XXXXXXXXX</span>&nbsp;<span style="color: #000000; background-color: #000000;">XXXXX</span> who are keeping oversight of the active vessels of the Helios Project. <span style="background-color: #000000; color: #000000;">XXXXXXXXX</span> Project, and the <span style="color: #000000; background-color: #000000;">XXXXXXXX</span> Project continue to operate as standard by report. The SEV Torch has been noted to require further time for recovery and additional supplies and personnel. The Expeditionary Administration has requested an influx of new Fleet personnel to assist in training for their security and engineering divisions in the event of further attack.</p>
+	<p><strong>...</strong></p>
+	<p>The Gilgameshi Colonial Confederation has agreed to talk of a continued non-aggression with Secretary General Barros and Vice Admiral <span style="color: #000000; background-color: #000000;">XXXXXXXXXX</span>&nbsp;<span style="color: #000000; background-color: #000000;">XXXXXXX</span> of the Joint Command. For the time being they have made their determination of watching and waiting, while reports from the Fourth have determined they are mobilizing patrols and vessel groups near their borders.</p>
+	<hr/>
+	<p>&nbsp;<em>This paper has been stamped with the stamp of MARSCOM - HIGH COMMAND OFFICES.</em></p>
+	<hr/><center><img src="fleetlogo.png"/></center>
+	"}

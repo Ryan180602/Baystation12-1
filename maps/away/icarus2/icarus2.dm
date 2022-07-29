@@ -11,7 +11,7 @@
 	)
 
 /obj/effect/overmap/visitable/sector/icarus2/New(nloc, max_x, max_y)
-	name = "[generate_planet_name()], \a [name]"
+	name = "Ivanov-Theta"
 	..()
 
 /datum/map_template/ruin/away_site/icarus2
@@ -49,7 +49,7 @@
 
 /obj/effect/computer_file_creator/icarus2_1/Initialize()
 	. = ..()
-	file_name = "ICARUS BLACK BOX DATA DUMP PRESYSTEM CRASH 12 06 2306"
+	file_name = "eblackboxdata120606"
 	file_info = " \
 	<h2>SEV Icarus - Emergency Black Box Data Dump \
 	<hr> \
@@ -95,7 +95,7 @@
 
 /obj/effect/computer_file_creator/icarus2_2/Initialize()
 	. = ..()
-	file_name = "ICARUS AI LOG DATA DUMP 12 06 2306"
+	file_name = "ailogdump120606"
 	file_info = " \
 	<b>Automated Hull Integrity Report</b><br>\
 	<hr> \
@@ -128,7 +128,7 @@
 
 /obj/effect/computer_file_creator/icarus2_3/Initialize()
 	. = ..()
-	file_name = "ICARUS E-MAIL TRANSCRIPT  SERVICE  12 06 2306"
+	file_name = "emaillogservice120606"
 	file_info = " \
 	<b>TITLE</b> Meals 4 Command<br>\
 	<b>ORIGIN</b> andrea.lecia@icarus.ec.scg<br>\
@@ -143,7 +143,7 @@
 
 /obj/effect/computer_file_creator/icarus2_4/Initialize()
 	. = ..()
-	file_name = "ICARUS SAVED E-MAIL TRANSCRIPT  COMMAND  12 06 2306"
+	file_name = "emaillogcommand120606"
 	file_info = " \
 	<b>TITLE</b> (URGENT)<br>\
 	<b>ORIGIN</b> a.peterson@icarus.ec.scg<br>\
@@ -158,7 +158,7 @@
 
 /obj/effect/computer_file_creator/icarus2_5/Initialize()
 	. = ..()
-	file_name = "ICARUS ACTIVE CREW MANIFEST  12 06 2306"
+	file_name = "crewmanifestactive120606"
 	file_info = "<center>\[solcrest]<BR>\
 			<b>SEV Icarus</b><br>\
 			Active Crew Roster - 05:01 - 12/06/2306</center><br>\
@@ -214,7 +214,7 @@
 
 /obj/effect/computer_file_creator/icarus2_6/Initialize()
 	. = ..()
-	file_name = "ICARUS RECOVERED CHAT TRANSCRIPT MEDICAL 12 06 2306"
+	file_name = "chattranscriptmed120606"
 	file_info = " \
 	\<05:36\> M477: bro\
 	\<05:36\> BETTI: what's up\
@@ -294,7 +294,7 @@
 
 /obj/effect/computer_file_creator/icarus2_7/Initialize()
 	. = ..()
-	file_name = "ICARUS RECOVERED CHAT TRANSCRIPT SECURITY 12 06 2306"
+	file_name = "sectranscript120606"
 	file_info = " \
 	\<06:35\> nurib: received the transcript fax, forberra\
 	\<06:36\> forberry: keep it closeby, laminate it if you have to. not even a single coffee stain on that paper.\
@@ -319,18 +319,18 @@
 
 /obj/effect/computer_file_creator/icarus2_8/Initialize()
 	. = ..()
-	file_name = "ICARUS RECOVERED INTERCOMM TRANSCRIPT ENGINEERING 12 06 2306"
+	file_name = "engintercomlog120606"
 	file_info = " <hr>\
 	\<Engineering\> \<Kallufe.Aiden\> <unintelligible>--it, Trois! Peter's dying on the floor and I can't hail Betty or Matt. Radiation's over hundred I-Us!\
 	\<Engineering\> \<Trois.Ari\> Try run and get Fors, but he's too busy. I cannot do much about the engine's radiation shielding-!\
 	\<Engineering\> \<Trois.Ari\> I'm <unintelligible>-o hail Ronda, where did she /GO/!?\
 	\<Engineering\> \<Anders.Semyon\> Ronda's helping get the Pasiphae to almost flight-ready status. The Minotaur's engines are gone, but the Pasiphae's reactor is active.\
-	\<Engineering\> \<Trois.Ari\> Semyon I am trying to keep our engine <unintellegible> with more radiation. I need Ronda to help me here, /now/! I don't even know what's going on with the drive.\
+	\<Engineering\> \<Trois.Ari\> Semyon I am trying to keep our engine <unintellegible> with more radiation. I need Ronda to help me here! I don't even know what's going on with the drive.\
 	\<Engineering\> \<Anders.Semyon\> The Liaison's getting on the Pasiphae. I'm keeping a sizeable contingent here plus the cryogenics manifest to help you, the Representative and Liaison will be heading down planet.\
 	\<Engineering\> \<Anders.Semyon\> The Icarus is doomed either ways, Trois. There's no two ways about it.\
-	\<Engineering\> \<Trois.Ari\> Then /what/ do you want me to do-!?\
+	\<Engineering\> \<Trois.Ari\> Then what do you want me to do-?\
 	\<Engineering\> \<Anders.Semyon\> Buy the people on the Icarus enough time for the Pasiphae to make trips to and from the surface so we can minimise casualties.\
-	\<Engineering\> \<Trois.Ari\> There is /no/ way you can make that many trips, Semyon-\
+	\<Engineering\> \<Trois.Ari\> There is no way you can make that many trips, Semyon-\
 	\<Engineering\> \<Anders.Semyon\> <unintelligible>--orry, Trois- the shuttle's getting ready to launch. See you on the other side.\
 	\<Engineering\> \<Trois.Ari\> ---..Okay! Fine. Okay. I can- okay.. I can fix this, Semyon. --Aiden, I need you to bring me more plasteel and titanium from our deck two storage!\
 	\<Engineering\> \<Trois.Ari\> Alright?\
@@ -342,7 +342,7 @@
 
 /obj/effect/computer_file_creator/icarus2_9/Initialize()
 	. = ..()
-	file_name = "ICARUS RECOVERED INTERCOMM TRANSCRIPT COMMANDHAILING 12 06 2306"
+	file_name = "holopadlogcmd120606"
 	file_info = " \
 	\<Hailing\> \<Anders.Semyon\> This is Lieutenant Semyon of the S-E-V Icarus, checking in on a seemingly unregistered station out here. Can I have your identification?\
 	\<Hailing\> \<????\> --Right this is Seismography Station twenty-two Bee, designation Phaethon. Why is a Solar vessel infringing upon a Solar station's restricted space?\
@@ -370,7 +370,7 @@
 
 /obj/effect/computer_file_creator/icarus2_10/Initialize()
 	. = ..()
-	file_name = "ICARUS RECOVERED SUPPLY LOG 12 06 2306"
+	file_name = "shuttlelaunchlog120606"
 	file_info = " \
 		<h2>SEV Icarus - Pasiphae Flight Control Log \
 		<hr> \
@@ -403,3 +403,22 @@
 		\<LOG\>: Force launch command received. Launching <br>\
 		\<LOG\>: Launch successful. Good luck on your survey mission, Pasiphae! <br>\
 	"
+
+/obj/effect/computer_file_creator/icarus2_11
+	name = "icarus file spawner - shuttle impact ai log data dump"
+
+/obj/effect/computer_file_creator/icarus2_2/Initialize()
+	. = ..()
+	file_name = "ailogdumpshut120606"
+	file_info = " \
+	<b>Pasiphae Launch Malfunction Report</b><br>\
+	<hr> \
+	<i>Report generated on 2306-05-25 at 09:49</i><br>\
+	><br>\
+	>Declare a ship-wide engineering emergency to prevent non-engineering crew from interfering with damaged areas.<br>\
+	>Wake up all engineering personnel from cryogenic stasis if possible.<br>\
+	>Deploy inflatables to M-Class damage areas after C-Class hullpoints are repaired.<br>\
+	>Re-establish atmosphere on affected decks and proceed with regular post-emergency protocols.<br>\
+	<hr> \
+	<i>Licensed to Deimos Advanced Information Systems (DAIS) under one or more developer license agreements.  See the NOTICE file distributed with this work for additional information regarding copyright ownership.  DAIS licenses this file to you under the Deimos License, Version 2.0 (the 'License'); you may not use this file except in compliance with the License.  You may obtain a copy of the License at dais/license.dnet.</i><br>\
+	<i>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an AS IS BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License.</i>"

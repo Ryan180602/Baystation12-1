@@ -22,6 +22,8 @@
 	set name = "Resonant Shriek (20)"
 	set desc = "Emits a high-frequency sound that confuses and deafens organics, blows out nearby lights, and overloads synthetics' sensors."
 
+	var/mob/living/carbon/human/H = src
+
 	var/datum/changeling/changeling = changeling_power(20,0,100,CONSCIOUS)
 	if(!changeling)	return 0
 
@@ -30,7 +32,6 @@
 		return 0
 
 	if(ishuman(src))
-		var/mob/living/carbon/human/H = src
 		if(H.silent)
 			to_chat(src, "<span class='danger'>You can't speak!</span>")
 			return 0
@@ -61,7 +62,7 @@
 				to_chat(M, "<span class='danger'>You hear an extremely loud screeching sound!  It \
 				[pick("confuses","confounds","perturbs","befuddles","dazes","unsettles","disorients")] you.</span>")
 				M.adjustEarDamage(0,30)
-				M.confused(5)
+				M.confused = max(M.confused, 5)
 				M << sound('sound/effects/screech.ogg')
 				affected += M
 			else
@@ -90,6 +91,8 @@
 	set name = "Dissonant Shriek (20)"
 	set desc = "We shift our vocal cords to release a high-frequency sound that overloads nearby electronics."
 
+	var/mob/living/carbon/human/H = src
+
 	var/datum/changeling/changeling = changeling_power(20,0,100,CONSCIOUS)
 	if(!changeling)
 		return FALSE
@@ -99,7 +102,6 @@
 		return FALSE
 
 	if(ishuman(src))
-		var/mob/living/carbon/human/H = src
 		if(H.silent)
 			to_chat(src, "<span class='danger'>You can't speak!</span>")
 			return FALSE

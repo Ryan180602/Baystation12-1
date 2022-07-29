@@ -8,7 +8,7 @@
 
 //Absorbs the victim's DNA. Requires a strong grip on the victim.
 //Doesn't cost anything as it's the most basic ability.
-/mob/living/proc/changeling_absorb_dna()
+/mob/living/proc/changeling_absorb_dna(mob/living/carbon/M)
 	set category = "Changeling"
 	set name = "Absorb DNA"
 
@@ -67,7 +67,7 @@
 	to_chat(src, "<span class='notice'>We have absorbed [T]!</span>")
 	src.visible_message("<span class='danger'>[src] sucks the fluids from [T]!</span>")
 	to_chat(T, "<span class='danger'>You have been absorbed by the changeling!</span>")
-	adjust_nutrition(T.nutrition)
+	M.adjust_nutrition(T.nutrition)
 	changeling.chem_charges += 10
 	if(changeling.readapts <= 0)
 		changeling.readapts = 0 //SANITYYYYYY

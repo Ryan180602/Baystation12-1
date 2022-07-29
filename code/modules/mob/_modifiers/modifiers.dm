@@ -161,7 +161,7 @@
 	if(mod.mob_overlay_state)
 		update_modifier_visuals()
 	if(mod.icon_scale_x_percent || mod.icon_scale_y_percent)
-		update_transform()
+		ClearTransform()
 	if(mod.client_color)
 		update_client_color()
 	if(LAZYLEN(mod.filter_parameters))

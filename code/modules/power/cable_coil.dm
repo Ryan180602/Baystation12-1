@@ -251,19 +251,20 @@
 	if (!isturf(user.loc))
 		to_chat(user, SPAN_WARNING("You don't have enough free space to do that."))
 		return
-	if (!use(15))
+	if (!src.can_use(15))
 		to_chat(user, SPAN_WARNING("You need at least 15 cable to make restraints."))
 		return
 	user.visible_message(
 		SPAN_ITALIC("\The [user] begins winding some cable together."),
 		SPAN_ITALIC("You begin to wind the cable into crude restraints.")
 	)
-	if (!do_after(user, 10 SECONDS, src, DO_DEFAULT | DO_PUBLIC_PROGRESS))
+	if (!do_after(user, 10 SECONDS, null, DO_DEFAULT | DO_PUBLIC_PROGRESS))
 		return
 	user.visible_message(
 		SPAN_ITALIC("\The [user] makes some crude cable restraints."),
 		SPAN_NOTICE("You finish making the restraints.")
 	)
+	src.use(15)
 	var/obj/item/handcuffs/cable/cuffs = new (user.loc)
 	cuffs.color = color
 

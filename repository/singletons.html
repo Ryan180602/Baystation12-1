@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;repository&#x2F;singletons - Space Station 13 - Baystation 12</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Space Station 13 - Baystation 12</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="repository/singletons.html#var">Var Details</a> - <a href="repository/singletons.html#proc">Proc Details</a></header>
+<main>
+<h1>singletons <aside>/<a href="repository/singletons.html">repository/singletons</a></aside>
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L4">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 4"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="repository/singletons.html#var/singletons">singletons</a></th><td>A cache of individual singletons as (/singleton/path = Instance, ...)</td></tr>
+            <tr><th><a href="repository/singletons.html#var/subtypesof_assoc">subtypesof_assoc</a></th><td>A cache of singleton subtypes according to a parent type as (/singleton/path = list(/singleton/path/foo = Instance, ...))</td></tr>
+            <tr><th><a href="repository/singletons.html#var/subtypesof_plain">subtypesof_plain</a></th><td>A cache of singleton subtypes according to a parent type as (/singleton/path = list(Subtype Instance, Subtype Instance, ...))</td></tr>
+            <tr><th><a href="repository/singletons.html#var/typesof_assoc">typesof_assoc</a></th><td>A cache of singleton types according to a parent type as (/singleton/path = list(/singleton/path = Instance, /singleton/path/foo = Instance, ...))</td></tr>
+            <tr><th><a href="repository/singletons.html#var/typesof_plain">typesof_plain</a></th><td>A cache of singleton types according to a parent type as (/singleton/path = list(Parent Instance, Subtype Instance, ...))</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="repository/singletons.html#proc/Get">Get</a></th><td>Fetches a singleton instance, creating and instantiating it if necessary.</td></tr>
+            <tr><th><a href="repository/singletons.html#proc/GetAssoc">GetAssoc</a></th><td>Fetches an associative list of singleton instances, creating and instantiating them if necessary.</td></tr>
+            <tr><th><a href="repository/singletons.html#proc/GetList">GetList</a></th><td>Fetches a plain list of singleton instances, creating and instantiating them if necessary.</td></tr>
+            <tr><th><a href="repository/singletons.html#proc/GetSubtypes">GetSubtypes</a></th><td>Fetches a plain list of singleton instances of the target type's subtypes, creating and instantiating them if necessary.</td></tr>
+            <tr><th><a href="repository/singletons.html#proc/GetSubtypesAssoc">GetSubtypesAssoc</a></th><td>Fetches an associative list of singleton instances of the target type's subtypes, creating and instantiating them if necessary.</td></tr>
+            <tr><th><a href="repository/singletons.html#proc/GetTypes">GetTypes</a></th><td>Fetches a plain list of singleton instances of the target type and its subtypes, creating and instantiating them if necessary.</td></tr>
+            <tr><th><a href="repository/singletons.html#proc/GetTypesAssoc">GetTypesAssoc</a></th><td>Fetches an associative list of singleton instances of the target type and its subtypes, creating and instantiating them if necessary.</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/singletons"><aside class="declaration">var </aside>singletons
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L6">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 6"/></a></h3>
+        <p>A cache of individual singletons as (/singleton/path = Instance, ...)</p><h3 id="var/subtypesof_assoc"><aside class="declaration">var </aside>subtypesof_assoc
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L12">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 12"/></a></h3>
+        <p>A cache of singleton subtypes according to a parent type as (/singleton/path = list(/singleton/path/foo = Instance, ...))</p><h3 id="var/subtypesof_plain"><aside class="declaration">var </aside>subtypesof_plain
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L18">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 18"/></a></h3>
+        <p>A cache of singleton subtypes according to a parent type as (/singleton/path = list(Subtype Instance, Subtype Instance, ...))</p><h3 id="var/typesof_assoc"><aside class="declaration">var </aside>typesof_assoc
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L9">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 9"/></a></h3>
+        <p>A cache of singleton types according to a parent type as (/singleton/path = list(/singleton/path = Instance, /singleton/path/foo = Instance, ...))</p><h3 id="var/typesof_plain"><aside class="declaration">var </aside>typesof_plain
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L15">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 15"/></a></h3>
+        <p>A cache of singleton types according to a parent type as (/singleton/path = list(Parent Instance, Subtype Instance, ...))</p><h2 id="proc">Proc Details</h2><h3 id="proc/Get"><aside class="declaration">proc </aside>Get<aside>(singleton_path) 
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L22">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 22"/></a></aside>
+        </h3>
+        <p>Fetches a singleton instance, creating and instantiating it if necessary.</p><h3 id="proc/GetAssoc"><aside class="declaration">proc </aside>GetAssoc<aside>(/list/singleton_paths) 
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L35">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 35"/></a></aside>
+        </h3>
+        <p>Fetches an associative list of singleton instances, creating and instantiating them if necessary.</p><h3 id="proc/GetList"><aside class="declaration">proc </aside>GetList<aside>(/list/singleton_paths) 
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L46">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 46"/></a></aside>
+        </h3>
+        <p>Fetches a plain list of singleton instances, creating and instantiating them if necessary.</p><h3 id="proc/GetSubtypes"><aside class="declaration">proc </aside>GetSubtypes<aside>(singleton_path) 
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L84">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 84"/></a></aside>
+        </h3>
+        <p>Fetches a plain list of singleton instances of the target type's subtypes, creating and instantiating them if necessary.</p><h3 id="proc/GetSubtypesAssoc"><aside class="declaration">proc </aside>GetSubtypesAssoc<aside>(singleton_path) 
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L66">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 66"/></a></aside>
+        </h3>
+        <p>Fetches an associative list of singleton instances of the target type's subtypes, creating and instantiating them if necessary.</p><h3 id="proc/GetTypes"><aside class="declaration">proc </aside>GetTypes<aside>(singleton_path) 
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L75">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 75"/></a></aside>
+        </h3>
+        <p>Fetches a plain list of singleton instances of the target type and its subtypes, creating and instantiating them if necessary.</p><h3 id="proc/GetTypesAssoc"><aside class="declaration">proc </aside>GetTypesAssoc<aside>(singleton_path) 
+        
+    
+            <a href="https://github.com/Ryan180602/Baystation12-1/blob/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e/code/datums/repositories/decls.dm#L57">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;repositories&#x2F;decls.dm 57"/></a></aside>
+        </h3>
+        <p>Fetches an associative list of singleton instances of the target type and its subtypes, creating and instantiating them if necessary.</p></main>
+<footer>
+    baystation12.dme
+    <a href="https://github.com/Ryan180602/Baystation12-1/tree/b9194576b97ccfd609ed5d51a07d466e2a2f4e4e">b919457</a>
+        (dev) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>

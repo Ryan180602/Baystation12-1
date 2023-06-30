@@ -29,8 +29,8 @@ General Public License version 3.
 
 
 <h3 id="modules">Modules
-<aside>(216 modules,
-    226/4384 macros, 5.2%)</aside></h3>
+<aside>(221 modules,
+    224/4368 macros, 5.1%)</aside></h3>
 <ul class="index-tree modules">
     <li><a href="(builtins).html" title="(builtins)">(builtins)</a></li>
     <li class="has-children"><span title="code">code</span><ul class="index-tree">
@@ -54,6 +54,7 @@ General Public License version 3.
     <li><a href="code/__defines/misc.html" title="code&#x2F;__defines&#x2F;misc">misc</a></li>
     <li><a href="code/__defines/mobs.html" title="code&#x2F;__defines&#x2F;mobs">mobs</a></li>
     <li><a href="code/__defines/singletons.html" title="code&#x2F;__defines&#x2F;singletons">singletons</a></li>
+    <li><a href="code/__defines/skills.html" title="code&#x2F;__defines&#x2F;skills">skills</a></li>
     <li><a href="code/__defines/zmimic.html" title="code&#x2F;__defines&#x2F;zmimic">zmimic</a></li>
     </ul></li>
     <li><a href="code/__spaceman_dmm.html" title="code&#x2F;__spaceman_dmm">__spaceman_dmm</a></li>
@@ -68,6 +69,7 @@ General Public License version 3.
     <li><a href="code/_helpers/text.html" title="code&#x2F;_helpers&#x2F;text">text</a></li>
     <li><a href="code/_helpers/time.html" title="code&#x2F;_helpers&#x2F;time">time</a></li>
     <li><a href="code/_helpers/tools.html" title="code&#x2F;_helpers&#x2F;tools">tools</a></li>
+    <li><a href="code/_helpers/turfs.html" title="code&#x2F;_helpers&#x2F;turfs">turfs</a></li>
     </ul></li>
     <li><a href="code/_macros.html" title="code&#x2F;_macros">_macros</a></li>
     <li><span class="no-substance">_onclick&#x2F;hud&#x2F;</span><a href="code/_onclick/hud/ability_screen_objects.html" title="code&#x2F;_onclick&#x2F;hud&#x2F;ability_screen_objects">ability_screen_objects</a></li>
@@ -78,6 +80,7 @@ General Public License version 3.
     <li><a href="code/controllers/hooks-defs.html" title="code&#x2F;controllers&#x2F;hooks-defs">hooks-defs</a></li>
     <li><a href="code/controllers/master.html" title="code&#x2F;controllers&#x2F;master">master</a></li>
     <li class="has-children"><span title="code&#x2F;controllers&#x2F;subsystems">subsystems</span><ul class="index-tree">
+    <li><a href="code/controllers/subsystems/garbage.html" title="code&#x2F;controllers&#x2F;subsystems&#x2F;garbage">garbage</a></li>
     <li><a href="code/controllers/subsystems/presence.html" title="code&#x2F;controllers&#x2F;subsystems&#x2F;presence">presence</a></li>
     <li><a href="code/controllers/subsystems/timer.html" title="code&#x2F;controllers&#x2F;subsystems&#x2F;timer">timer</a></li>
     </ul></li>
@@ -95,6 +98,7 @@ General Public License version 3.
     <li><span class="no-substance">scent&#x2F;</span><a href="code/datums/extensions/scent/_scent.html" title="code&#x2F;datums&#x2F;extensions&#x2F;scent&#x2F;_scent">_scent</a></li>
     <li><a href="code/datums/extensions/state_machine.html" title="code&#x2F;datums&#x2F;extensions&#x2F;state_machine">state_machine</a></li>
     </ul></li>
+    <li><span class="no-substance">helper_datums&#x2F;</span><a href="code/datums/helper_datums/teleport.html" title="code&#x2F;datums&#x2F;helper_datums&#x2F;teleport">teleport</a></li>
     <li><a href="code/datums/mil_ranks.html" title="code&#x2F;datums&#x2F;mil_ranks">mil_ranks</a></li>
     <li><span class="no-substance">mind&#x2F;</span><a href="code/datums/mind/memory.html" title="code&#x2F;datums&#x2F;mind&#x2F;memory">memory</a></li>
     <li class="has-children"><span title="code&#x2F;datums&#x2F;movement">movement</span><ul class="index-tree">
@@ -276,6 +280,7 @@ General Public License version 3.
     <li class="has-children"><span title="code&#x2F;modules&#x2F;organs">organs</span><ul class="index-tree">
     <li class="has-children"><span title="code&#x2F;modules&#x2F;organs&#x2F;external">external</span><ul class="index-tree">
     <li><a href="code/modules/organs/external/_external.html" title="code&#x2F;modules&#x2F;organs&#x2F;external&#x2F;_external">_external</a></li>
+    <li><a href="code/modules/organs/external/_external_icons.html" title="code&#x2F;modules&#x2F;organs&#x2F;external&#x2F;_external_icons">_external_icons</a></li>
     <li><a href="code/modules/organs/external/standard.html" title="code&#x2F;modules&#x2F;organs&#x2F;external&#x2F;standard">standard</a></li>
     <li class="has-children"><span title="code&#x2F;modules&#x2F;organs&#x2F;external&#x2F;wounds">wounds</span><ul class="index-tree">
     <li><a href="code/modules/organs/external/wounds/wound.html" title="code&#x2F;modules&#x2F;organs&#x2F;external&#x2F;wounds&#x2F;wound">wound</a></li>
@@ -361,7 +366,7 @@ General Public License version 3.
 
 
 <h3 id="types">Types
-<aside>(269 detailed/538 documented/20229 total, 2.7%)</aside></h3>
+<aside>(280 detailed/550 documented/20327 total, 2.7%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><a href="area.html" title="&#x2F;area">area</a><ul class="index-tree">
@@ -428,6 +433,7 @@ Null key is always #000000.</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;backpack_setup">backpack_setup</span> - Character setup</li>
     <li><a href="datum/backpack_tweak.html" title="&#x2F;datum&#x2F;backpack_tweak">backpack_tweak</a></li>
     <li><a href="datum/beam.html" title="&#x2F;datum&#x2F;beam">beam</a></li>
+    <li><span class="no-substance">bubble_effect&#x2F;</span><a href="datum/bubble_effect/bluespace_pulse.html" title="&#x2F;datum&#x2F;bubble_effect&#x2F;bluespace_pulse">bluespace_pulse</a></li>
     <li><span class="no-substance">build_mode&#x2F;</span><a href="datum/build_mode/paint.html" title="&#x2F;datum&#x2F;build_mode&#x2F;paint">paint</a></li>
     <li class="has-children"><span class="no-substance" title="&#x2F;datum&#x2F;category_collection">category_collection</span> - Category Collection<ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;datum&#x2F;category_collection&#x2F;player_setup_collection">player_setup_collection</span> - Category Collection Setup</li>
@@ -483,7 +489,6 @@ Null key is always #000000.</li>
     <li><a href="datum/controller/subsystem/skybox.html" title="&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;skybox">skybox</a></li>
     <li><a href="datum/controller/subsystem/throwing.html" title="&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;throwing">throwing</a></li>
     <li><a href="datum/controller/subsystem/ticker.html" title="&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;ticker">ticker</a></li>
-    <li><a href="datum/controller/subsystem/timer.html" title="&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;timer">timer</a></li>
     <li><a href="datum/controller/subsystem/typing.html" title="&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;typing">typing</a></li>
     <li><a href="datum/controller/subsystem/zcopy.html" title="&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;zcopy">zcopy</a></li>
     </ul></li>
@@ -497,6 +502,7 @@ and don't call start() in a loop that will be repeated otherwise it'll get spamm
     <li><span class="no-substance" title="&#x2F;datum&#x2F;effect&#x2F;effect&#x2F;system&#x2F;trail&#x2F;steam">steam</span> - Attach a steam trail to an object (eg. a reacting beaker) that will follow it</li>
     </ul></li>
     <li class="has-children"><span title="&#x2F;datum&#x2F;event">event</span><ul class="index-tree">
+    <li><a href="datum/event/bsd_instability.html" title="&#x2F;datum&#x2F;event&#x2F;bsd_instability">bsd_instability</a></li>
     <li><a href="datum/event/exo_awakening.html" title="&#x2F;datum&#x2F;event&#x2F;exo_awakening">exo_awakening</a></li>
     <li><a href="datum/event/mob_spawning.html" title="&#x2F;datum&#x2F;event&#x2F;mob_spawning">mob_spawning</a></li>
     </ul></li>
@@ -566,12 +572,14 @@ Variable model is one full map line (e.g /turf/unsimulated/wall{icon_state = &qu
     <li><a href="datum/powernet.html" title="&#x2F;datum&#x2F;powernet">powernet</a></li>
     <li><span class="no-substance">progressbar&#x2F;</span><a href="datum/progressbar/public.html" title="&#x2F;datum&#x2F;progressbar&#x2F;public">public</a></li>
     <li><a href="datum/pronouns.html" title="&#x2F;datum&#x2F;pronouns">pronouns</a></li>
+    <li><a href="datum/qdel_details.html" title="&#x2F;datum&#x2F;qdel_details">qdel_details</a></li>
     <li class="has-children"><a href="datum/reagent.html" title="&#x2F;datum&#x2F;reagent">reagent</a><ul class="index-tree">
     <li><span class="no-substance">drugs&#x2F;</span><span class="no-substance" title="&#x2F;datum&#x2F;reagent&#x2F;drugs&#x2F;hextro">hextro</span> - Spam prevention.
 Enables procs to activate, remains true until THAT PROC sets it to false again.</li>
     <li><a href="datum/reagent/water.html" title="&#x2F;datum&#x2F;reagent&#x2F;water">water</a></li>
     </ul></li>
     <li><a href="datum/research.html" title="&#x2F;datum&#x2F;research">research</a></li>
+    <li><a href="datum/sector_scan.html" title="&#x2F;datum&#x2F;sector_scan">sector_scan</a></li>
     <li><a href="datum/seed.html" title="&#x2F;datum&#x2F;seed">seed</a></li>
     <li class="has-children"><a href="datum/shuttle.html" title="&#x2F;datum&#x2F;shuttle">shuttle</a><ul class="index-tree">
     <li><span class="no-substance">autodock&#x2F;ferry&#x2F;</span><a href="datum/shuttle/autodock/ferry/specops.html" title="&#x2F;datum&#x2F;shuttle&#x2F;autodock&#x2F;ferry&#x2F;specops">specops</a></li>
@@ -608,8 +616,6 @@ Enables procs to activate, remains true until THAT PROC sets it to false again.<
     <li><span class="no-substance" title="&#x2F;datum&#x2F;terminal_skill_fail&#x2F;error">error</span> - General failure with no consequences.</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;terminal_skill_fail&#x2F;sysnotify">sysnotify</span> - General fail with a chance of embarrasment.</li>
     </ul></li>
-    <li><a href="datum/timedevent.html" title="&#x2F;datum&#x2F;timedevent">Timed Event</a> - This is the actual timer, it contains the callback and necessary data to maintain
-the timer.</li>
     <li><span class="no-substance">topic_manager&#x2F;</span><a href="datum/topic_manager/program.html" title="&#x2F;datum&#x2F;topic_manager&#x2F;program">program</a></li>
     <li><a href="datum/trader.html" title="&#x2F;datum&#x2F;trader">trader</a></li>
     <li class="has-children"><span title="&#x2F;datum&#x2F;unit_test">unit_test</span><ul class="index-tree">
@@ -681,6 +687,12 @@ Parameters: var/datum/money_account</li>
 Called in ticker.dm when a round ends.</li>
     <li><span class="no-substance" title="&#x2F;hook&#x2F;roundstart">roundstart</span> - Roundstart hook.
 Called in ticker.dm when a round starts.</li>
+    <li><span class="no-substance" title="&#x2F;hook&#x2F;sell_animal">sell_animal</span> - Animal sold hook.
+Called in supplyshuttle.dm when a anomaly container is sold on the shuttle.
+Parameters: var/obj/structure/stasis_cage/sold, var/area/shuttle</li>
+    <li><span class="no-substance" title="&#x2F;hook&#x2F;sell_anomalycage">sell_anomalycage</span> - Anomaly cage sold hook.
+Called in supplyshuttle.dm when a anomaly container is sold on the shuttle.
+Parameters: var/obj/machinery/anomaly_container/sold, var/area/shuttle</li>
     <li><span class="no-substance" title="&#x2F;hook&#x2F;sell_crate">sell_crate</span> - Crate sold hook.
 Called in supplyshuttle.dm when a crate is sold on the shuttle.
 Parameters: var/obj/structure/closet/crate/sold, var/area/shuttle</li>
@@ -715,22 +727,25 @@ Parameters: var/obj/item/card/id</li>
     <li><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;construct&#x2F;wraith">wraith</span> - Wraith</li>
     </ul></li>
     <li class="has-children"><span title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile">hostile</span><ul class="index-tree">
-    <li class="has-children"><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;fleet">fleet</span><ul class="index-tree">
-    <li class="has-children"><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;fleet&#x2F;ranged">ranged</span> - Pistol<ul class="index-tree">
-    <li><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;fleet&#x2F;ranged&#x2F;bullpup">bullpup</span> - Bullpup</li>
-    <li><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;fleet&#x2F;ranged&#x2F;leader">leader</span> - Team Leader</li>
-    </ul></li>
-    <li class="has-children"><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;fleet&#x2F;space">space</span> - Rigsuit<ul class="index-tree">
-    <li><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;fleet&#x2F;space&#x2F;ranged">ranged</span> - Rigsuit - Bullpup</li>
-    </ul></li>
-    </ul></li>
-    <li class="has-children"><span title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;giant_spider">giant_spider</span><ul class="index-tree">
+    <li><a href="mob/living/simple_animal/hostile/fleet_heavy.html" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;fleet_heavy">fleet_heavy</a></li>
+    <li class="has-children"><a href="mob/living/simple_animal/hostile/giant_spider.html" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;giant_spider">giant_spider</a><ul class="index-tree">
     <li><a href="mob/living/simple_animal/hostile/giant_spider/carrier.html" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;giant_spider&#x2F;carrier">carrier</a></li>
     <li><a href="mob/living/simple_animal/hostile/giant_spider/lurker.html" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;giant_spider&#x2F;lurker">lurker</a></li>
     <li><a href="mob/living/simple_animal/hostile/giant_spider/phorogenic.html" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;giant_spider&#x2F;phorogenic">phorogenic</a></li>
     <li><a href="mob/living/simple_animal/hostile/giant_spider/tunneler.html" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;giant_spider&#x2F;tunneler">tunneler</a></li>
     </ul></li>
-    <li><span class="no-substance">syndicate&#x2F;</span><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;syndicate&#x2F;melee">melee</span> - Sword and shield</li>
+    <li class="has-children"><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;human">human</span><ul class="index-tree">
+    <li class="has-children"><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;human&#x2F;fleet">fleet</span><ul class="index-tree">
+    <li class="has-children"><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;human&#x2F;fleet&#x2F;ranged">ranged</span> - Pistol<ul class="index-tree">
+    <li><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;human&#x2F;fleet&#x2F;ranged&#x2F;bullpup">bullpup</span> - Bullpup</li>
+    <li><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;human&#x2F;fleet&#x2F;ranged&#x2F;leader">leader</span> - Team Leader</li>
+    </ul></li>
+    <li class="has-children"><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;human&#x2F;fleet&#x2F;space">space</span> - Rigsuit<ul class="index-tree">
+    <li><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;human&#x2F;fleet&#x2F;space&#x2F;ranged">ranged</span> - Rigsuit - Bullpup</li>
+    </ul></li>
+    </ul></li>
+    <li><span class="no-substance">syndicate&#x2F;</span><span class="no-substance" title="&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;hostile&#x2F;human&#x2F;syndicate&#x2F;melee">melee</span> - Sword and shield</li>
+    </ul></li>
     </ul></li>
     </ul></li>
     </ul></li>
@@ -809,7 +824,6 @@ This is an obj because raw atoms can't be placed in DM or third-party mapping to
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;accessory&#x2F;solgov&#x2F;department">department</span> - department tags</li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;accessory&#x2F;solgov&#x2F;ec_scarf">ec_scarf</span> - scarves</li>
     <li class="has-children"><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;accessory&#x2F;solgov&#x2F;rank">rank</span> - ranks - ec<ul class="index-tree">
-    <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;accessory&#x2F;solgov&#x2F;rank&#x2F;army">army</span> - ranks - marines</li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;accessory&#x2F;solgov&#x2F;rank&#x2F;fleet">fleet</span> - ranks - fleet</li>
     </ul></li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;accessory&#x2F;solgov&#x2F;specialty">specialty</span> - specialty pins</li>
@@ -826,6 +840,7 @@ This is an obj because raw atoms can't be placed in DM or third-party mapping to
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;device&#x2F;camera&#x2F;siliconcam">siliconcam</span> - AI-specific</li>
     </ul></li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;device&#x2F;camera_film">camera_film</span> - film</li>
+    <li><a href="obj/item/device/cosmetic_surgery_kit.html" title="&#x2F;obj&#x2F;item&#x2F;device&#x2F;cosmetic_surgery_kit">cosmetic_surgery_kit</a></li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;device&#x2F;debugger">debugger</span> - Multitool -- A multitool is used for hacking electronic devices.
 TO-DO -- Using it as a power measurement tool for cables etc. Nannek.</li>
     <li><a href="obj/item/device/electronic_assembly.html" title="&#x2F;obj&#x2F;item&#x2F;device&#x2F;electronic_assembly">electronic_assembly</a></li>
@@ -855,6 +870,7 @@ TO-DO -- Using it as a power measurement tool for cables etc. Nannek.</li>
     </ul></li>
     <li><span class="no-substance">dice&#x2F;d20&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;dice&#x2F;d20&#x2F;cursed">cursed</span> - Cursed Dice</li>
     <li><span class="no-substance">flame&#x2F;lighter&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;flame&#x2F;lighter&#x2F;zippo">zippo</span> - Zippo</li>
+    <li><a href="obj/item/grab.html" title="&#x2F;obj&#x2F;item&#x2F;grab">grab</a></li>
     <li><span class="no-substance">grenade&#x2F;</span><a href="obj/item/grenade/spawnergrenade.html" title="&#x2F;obj&#x2F;item&#x2F;grenade&#x2F;spawnergrenade">spawnergrenade</a></li>
     <li class="has-children"><a href="obj/item/gun.html" title="&#x2F;obj&#x2F;item&#x2F;gun">gun</a><ul class="index-tree">
     <li><span class="no-substance">energy&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;gun&#x2F;energy&#x2F;lasertag">lasertag</span> - Laser Tag</li>
@@ -987,6 +1003,7 @@ files in particular are also available.<ul class="index-tree">
     <li><a href="obj/item/storage/backpack.html" title="&#x2F;obj&#x2F;item&#x2F;storage&#x2F;backpack">backpack</a></li>
     <li><span class="no-substance">belt&#x2F;utility&#x2F;</span><a href="obj/item/storage/belt/utility/full.html" title="&#x2F;obj&#x2F;item&#x2F;storage&#x2F;belt&#x2F;utility&#x2F;full">full</a></li>
     <li class="has-children"><a href="obj/item/storage/fancy.html" title="&#x2F;obj&#x2F;item&#x2F;storage&#x2F;fancy">fancy</a><ul class="index-tree">
+    <li><span class="no-substance">matches&#x2F;</span><a href="obj/item/storage/fancy/matches/matchbox.html" title="&#x2F;obj&#x2F;item&#x2F;storage&#x2F;fancy&#x2F;matches&#x2F;matchbox">matchbox</a></li>
     <li class="has-children"><a href="obj/item/storage/fancy/smokable.html" title="&#x2F;obj&#x2F;item&#x2F;storage&#x2F;fancy&#x2F;smokable">smokable</a><ul class="index-tree">
     <li><a href="obj/item/storage/fancy/smokable/antag.html" title="&#x2F;obj&#x2F;item&#x2F;storage&#x2F;fancy&#x2F;smokable&#x2F;antag">antag</a></li>
     </ul></li>
@@ -1028,6 +1045,7 @@ Research Information Browser//</li>
     </ul></li>
     <li><a href="obj/machinery/drone_fabricator.html" title="&#x2F;obj&#x2F;machinery&#x2F;drone_fabricator">drone_fabricator</a></li>
     <li><span class="no-substance">embedded_controller&#x2F;radio&#x2F;</span><a href="obj/machinery/embedded_controller/radio/docking_port_multi.html" title="&#x2F;obj&#x2F;machinery&#x2F;embedded_controller&#x2F;radio&#x2F;docking_port_multi">docking_port_multi</a> - ** DEBUG VERBS ***</li>
+    <li><span class="no-substance">hologram&#x2F;</span><a href="obj/machinery/hologram/holopad.html" title="&#x2F;obj&#x2F;machinery&#x2F;hologram&#x2F;holopad">holopad</a></li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;machinery&#x2F;holosign">holosign</span> - HOLOSIGN</li>
     <li class="has-children"><a href="obj/machinery/light.html" title="&#x2F;obj&#x2F;machinery&#x2F;light">light</a><ul class="index-tree">
     <li><span class="no-substance">small&#x2F;</span><a href="obj/machinery/light/small/readylight.html" title="&#x2F;obj&#x2F;machinery&#x2F;light&#x2F;small&#x2F;readylight">readylight</a></li>
@@ -1048,6 +1066,7 @@ Research Information Browser//</li>
     <li><a href="obj/machinery/smartfridge/secure.html" title="&#x2F;obj&#x2F;machinery&#x2F;smartfridge&#x2F;secure">secure</a></li>
     </ul></li>
     <li><a href="obj/machinery/tele_beacon.html" title="&#x2F;obj&#x2F;machinery&#x2F;tele_beacon">tele_beacon</a></li>
+    <li><a href="obj/machinery/tele_pad.html" title="&#x2F;obj&#x2F;machinery&#x2F;tele_pad">tele_pad</a></li>
     <li><span class="no-substance">telecomms&#x2F;</span><a href="obj/machinery/telecomms/broadcaster.html" title="&#x2F;obj&#x2F;machinery&#x2F;telecomms&#x2F;broadcaster">broadcaster</a></li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;machinery&#x2F;the_singularitygen">the_singularitygen</span> - SINGULARITY SPAWNER</li>
     <li><a href="obj/machinery/vending.html" title="&#x2F;obj&#x2F;machinery&#x2F;vending">vending</a></li>
@@ -1109,10 +1128,12 @@ unlikely that you'll need to modify this</li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;structure&#x2F;disposalpipe&#x2F;up">up</span> - Z-Level stuff</li>
     </ul></li>
     <li><a href="obj/structure/iv_stand.html" title="&#x2F;obj&#x2F;structure&#x2F;iv_stand">iv_stand</a></li>
+    <li><a href="obj/structure/ladder.html" title="&#x2F;obj&#x2F;structure&#x2F;ladder">ladder</a></li>
     <li><a href="obj/structure/mine.html" title="&#x2F;obj&#x2F;structure&#x2F;mine">mine</a></li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;structure&#x2F;ore_box">ore_box</span> - Ore box</li>
     <li><a href="obj/structure/railing.html" title="&#x2F;obj&#x2F;structure&#x2F;railing">railing</a></li>
     <li><a href="obj/structure/roller_bed.html" title="&#x2F;obj&#x2F;structure&#x2F;roller_bed">roller_bed</a></li>
+    <li><a href="obj/structure/stairs.html" title="&#x2F;obj&#x2F;structure&#x2F;stairs">stairs</a></li>
     <li><a href="obj/structure/windoor_assembly.html" title="&#x2F;obj&#x2F;structure&#x2F;windoor_assembly">windoor_assembly</a></li>
     </ul></li>
     </ul></li>
@@ -1161,7 +1182,7 @@ On a directed graph, these would be the arrows connecting the nodes representing
 </main>
 <footer>
     baystation12.dme
-    <a href="https://github.com/Ryan180602/Baystation12-1/tree/e6521367bfbe60082c87d8488dbe731c6ff04bfa">e652136</a>
+    <a href="https://github.com/Ryan180602/Baystation12-1/tree/876c255710613fda0c9e893b9aa0f6fc74b49b3c">876c255</a>
         (dev) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
 </body>
 </html>

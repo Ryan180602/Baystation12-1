@@ -114,6 +114,12 @@ Weapons
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
 	starts_loaded = 0 //Nobody keeps ballistic weapons loaded
 
+/obj/item/gun/projectile/revolver/medium/captain/co
+	name = "officer's revolver"
+	desc = "A standardised al-Maliki & Mosley Autococker - in service with the SCGA and various PDFs for officers with style."
+	starts_loaded = TRUE
+
+
 /obj/item/gun/energy/stunrevolver/secure/nanotrasen
 	name = "corporate stun revolver"
 	desc = "This A&M X6 is fitted with an NT1019 chip which allows remote authorization of weapon functionality. It has a NanoTrasen logo on the grip."

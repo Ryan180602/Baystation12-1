@@ -26,6 +26,11 @@
 	w_class = ITEM_SIZE_NORMAL
 	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_ADHERENT)
 
+/obj/item/clothing/head/helmet/tan
+	name = "tan combat helmet"
+	accessories = list(/obj/item/clothing/accessory/helmet_cover/tan)
+
+
 /obj/item/clothing/head/helmet/nt
 	name = "corporate security helmet"
 	desc = "A helmet with 'CORPORATE SECURITY' printed on the back in red lettering."

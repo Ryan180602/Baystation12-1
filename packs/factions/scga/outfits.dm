@@ -15,6 +15,58 @@
 	back = /obj/item/storage/backpack/messenger/brown
 
 
+/singleton/hierarchy/outfit/scga/utility/combat
+	name = "SCGA - Combat Utility"
+	head = /obj/item/clothing/head/helmet/tan
+	suit = /obj/item/clothing/suit/armor/pcarrier/tan/tactical
+	belt = /obj/item/storage/belt/holster/security/tactical
+	mask = /obj/item/clothing/mask/balaclava/tactical
+	glasses = /obj/item/clothing/glasses/meson
+	l_pocket = /obj/item/device/flashlight/maglight
+	r_hand = /obj/item/gun/projectile/pistol/m22f
+	backpack_contents = list(/obj/item/ammo_magazine/pistol/double = 4, /obj/item/storage/firstaid/sleekstab = 1)
+	l_hand = /obj/item/storage/box/large/scga_ranks
+
+	id_slot = slot_wear_id
+	id_types = list(/obj/item/card/id/centcom/ERT)
+	id_desc = "Solar Army Identification Tab"
+	id_pda_assignment = "Solar Army Infantry"
+
+
+/singleton/hierarchy/outfit/scga/utility/combat/med
+	name = "SCGA - Medical Combat Utility"
+	belt = /obj/item/storage/belt/medical
+	glasses = /obj/item/clothing/glasses/hud/health/goggle
+	backpack_contents = list(/obj/item/ammo_magazine/pistol/double = 4, /obj/item/storage/firstaid/sleekstab = 3, /obj/item/bodybag/cryobag = 1)
+
+	id_pda_assignment = "Solar Army Combat Medic"
+
+
+/singleton/hierarchy/outfit/scga/utility/combat/engi
+	name = "SCGA - Engineering Combat Utility"
+	belt = obj/item/storage/belt/utility/full
+	glasses = /obj/item/clothing/glasses/meson
+	backpack = /obj/item/storage/backpack/rucksack/tan
+
+	id_pda_assignment = "Solar Army Combat Engineer"
+
+
+/singleton/hierarchy/outfit/scga/utility/combat/nco
+	name = "SCGA - NCO Combat Utility"
+	glasses = /obj/item/clothing/glasses/thermal
+/singleton/hierarchy/outfit/scga/utility/combat/co
+	name = "SCGA - Officer Combat Utility"
+	head = /obj/item/clothing/head/scga/service/garrison_officer
+	belt = /obj/item/storage/belt/holster/security
+	glasses = /obj/item/clothing/glasses/aviators_gold
+	backpack = /obj/item/storage/backpack/satchel/grey
+	r_hand = /obj/item/gun/projectile/revolver/medium/captain
+	l_hand = /obj/item/storage/box/large/scga_ranks_officer
+	backpack_contents = list(/obj/item/ammo_magazine/speedloader = 3, /obj/item/storage/firstaid/sleekstab = 1)
+
+	id_pda_assignment = "Solar Army Officer"
+
+
 /singleton/hierarchy/outfit/scga/utility/tan
 	name = "SCGA - Utility, Tan"
 	head = /obj/item/clothing/head/scga/utility/tan

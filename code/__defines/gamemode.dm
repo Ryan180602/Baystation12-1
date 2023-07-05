@@ -53,6 +53,18 @@
 #define MODE_MISC_AGITATOR "provocateur"
 #define MODE_HUNTER        "hunter"
 #define MODE_VOXRAIDER     "vox raider"
+#define MODE_ICCGN         "confederate infantry"
+#define MODE_ICCGN_CO      "confederate co"
+#define MODE_ICCGN_NCO     "confederate nco"
+#define MODE_ICCGN_MEDIC   "confederate field medic"
+#define MODE_ICCGN_ENGI    "confederate sapper"
+#define MODE_ICCGN_MECH    "confederate exosuit operator"
+#define MODE_SCGA          "solar infantry"
+#define MODE_SCGA_CO       "solar co"
+#define MODE_SCGA_NCO      "solar nco"
+#define MODE_SCGA_MEDIC    "solar combat medic"
+#define MODE_SCGA_ENGI     "solar combat engineer"
+#define MODE_SCGA_MECH     "solar mechanised infantry"
 
 #define DEFAULT_TELECRYSTAL_AMOUNT 130
 #define IMPLANT_TELECRYSTAL_AMOUNT(x) (round(x * 0.49)) // If this cost is ever greater than half of DEFAULT_TELECRYSTAL_AMOUNT then it is possible to buy more TC than you spend

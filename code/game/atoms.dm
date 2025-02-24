@@ -1078,10 +1078,18 @@
 	bullet_hole.pixel_y--
 
 	if(Proj.damage >= 50)
-		bullet_hole.icon_state = "scorch"
+		if (istype(Proj, /obj/item/projectile/beam))
+			bullet_hole.icon_state = "scorch"
+		else
+			bullet_hole.icon_state = "bhole"
 		bullet_hole.set_dir(pick(NORTH,SOUTH,EAST,WEST)) // random scorch design
-	else
+		return
+
+	if (istype(Proj, /obj/item/projectile/beam))
 		bullet_hole.icon_state = "light_scorch"
+	else
+		bullet_hole.icon_state = "dent"
+	bullet_hole.set_dir(pick(NORTH,SOUTH,EAST,WEST))
 
 /atom/proc/clear_bulletholes()
 	for(var/obj/overlay/bullet_hole/bullet_hole in src)

@@ -26,6 +26,10 @@
 	var/paint_color
 	var/stripe_color
 	var/static/list/wall_stripe_cache = list()
+	/// Projectile list on a wall.
+	var/list/obj/item/projectile/projs = list()
+	/// Bullethole data for projectiles.
+	var/list/bhole_data = list()
 
 /turf/simulated/wall/New(newloc, materialtype, rmaterialtype)
 	..(newloc)
@@ -105,6 +109,7 @@
 		new /obj/sparks(get_turf(Proj))
 
 	create_bullethole(Proj)//Potentially infinite bullet holes but most walls don't last long enough for this to be a problem.
+	add_bdata(Proj)
 	..()
 
 /turf/simulated/wall/proc/clear_plants()
@@ -120,6 +125,7 @@
 /turf/simulated/wall/ChangeTurf(newtype, tell_universe = TRUE, force_lighting_update = FALSE, keep_air = FALSE)
 	clear_plants()
 	clear_bulletholes()
+	remove_bdata()
 	. = ..(newtype, tell_universe, force_lighting_update, keep_air)
 	var/turf/new_turf = .
 	for (var/turf/simulated/wall/W in RANGE_TURFS(new_turf, 1))
@@ -127,6 +133,35 @@
 			continue
 		W.update_connections()
 		W.queue_icon_update()
+
+
+// Projectile forensics
+/datum/bhole_data
+	var/obj/item/gun/weapon = null
+	var/turf/fsource = null
+	var/ftype = null
+
+
+/turf/simulated/wall/proc/add_bdata(obj/item/projectile/Proj)
+	if (!Proj)
+		return
+
+	var/datum/bhole_data/B = bhole_data[Proj]
+	if(!B)
+		B = new()
+		B.weapon = Proj.shot_from
+		bhole_data[Proj] = B
+
+	B.fsource = get_turf(B.weapon)
+	if (istype(B.weapon, /obj/item/gun/energy))
+		B.ftype = "energy"
+	else
+		B.ftype = "kinetic"
+
+
+/turf/simulated/wall/proc/remove_bdata()
+	if (length(bhole_data))
+		bhole_data.Cut()
 
 //Appearance
 /turf/simulated/wall/examine(mob/user)
@@ -204,6 +239,7 @@
 
 	clear_plants()
 	clear_bulletholes()
+	remove_bdata()
 	material = SSmaterials.get_material_by_name("placeholder")
 	reinf_material = null
 	update_connections(1)

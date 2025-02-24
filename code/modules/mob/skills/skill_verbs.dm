@@ -207,14 +207,19 @@ The Appraise verb. Used on objects to estimate their value.
 
 /mob/proc/noirvision()
 	set category = "IC"
-	set name = "Detective instinct"
+	set name = "Detective Instinct"
 	set src = usr
 	set popup_menu = FALSE
 	if (incapacitated())
 		return
 	if (has_client_color(/datum/client_color/noir))
 		remove_client_color(/datum/client_color/noir)
-		to_chat(src, "You stop looking for clues.")
+		to_chat(src, SPAN_NOTICE("You stop looking for clues."))
 	else
 		add_client_color(/datum/client_color/noir)
-		to_chat(src, "You clear your mind and focus on the scene before you.")
+		to_chat(src, SPAN_NOTICE("You clear your mind and focus on the scene before you."))
+
+/obj/ebeam/trace
+	plane = TRACE_EFFECT_PLACE
+	appearance_flags = DEFAULT_APPEARANCE_FLAGS | TILE_BOUND | NO_CLIENT_COLOR
+	z_flags = ZMM_IGNORE

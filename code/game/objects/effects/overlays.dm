@@ -75,5 +75,5 @@
 	name = "bullet hole"
 	icon = 'icons/effects/effects.dmi'
 	layer = DECAL_LAYER
-	icon_state = "scorch"
+	icon_state = "sbhole"
 	mouse_opacity = MOUSE_OPACITY_UNCLICKABLE
